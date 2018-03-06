@@ -47,19 +47,19 @@ app.get('/', (req, res)=>{
   res.render('home.hbs', {
     pageTitle: 'Millennial Orange Homepage',
     welcomeMessage: `Welcome ${userName}!`,
-    currentYear: new Date().getFullYear()
+    
   })
 });
 app.get('/about', (req, res)=>{
   res.render('about.hbs', {
     pageTitle: 'About Us',
-    currentYear: new Date().getFullYear()
+
   })
 });
 app.get('/projects', (req, res) => {
   res.render('projects.hbs', {
     pageTitle: 'Potential Project Ideas'
-    currentYear: new Date().getFullYear()
+
   })
 })
 app.get('/bad', (req, res) =>{
